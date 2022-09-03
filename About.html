@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  background-image: url("https://s6.postimg.org/kbn7mj0pd/stripe_174da7a1d2ce200dc5c84f6a91861704.png");
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+.menu {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  
+}
+.menu li {
+  list-style: none;
+  color: #2d332f;
+  font-family: "Raleway", sans-serif;
+  display: inline;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+
+#container {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 60%;
+  background-color: #ffffff;
+  display: flex;
+  padding: 20px;
+  -webkit-box-shadow: -1px 4px 37px -1px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -1px 4px 37px -1px rgba(0, 0, 0, 0.52);
+  box-shadow: -1px 4px 37px -1px rgba(0, 0, 0, 0.52);
+}
+
+
+/*h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0px;
+}*/
+
+.circle {
+  /*font-size: 150px;*/
+  color: #0f6eb2;
+  /*display: flex;
+  flex-direction: column;*/
+  align-items: center;
+  background-color: #0f6eb2;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #0f6eb2;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.col-left {
+  flex-direction: column;
+  width: 45%;
+  padding-right: 20px;
+}
+
+.contact{
+  display: flex;
+ justify-content: flex-start;
+
+
+
+
+}
+
+.contact ul{
+  list-style: none;
+  display: inline-block;
+
+}
+
+
+.contact-label{
+  color: #196fb0;
+  padding-right: 40px;}
+
+
+.skills-wrapper{
+  display: flex;
+  flex-direction: column;
+ /*background-color: red;*/
+ justify-content: space-between;
+ padding-right: 30px;
+ text-align: center;
+}
+
+.skills-wrapper h3{
+text-transform: uppercase;
+font-size: 18px;
+}
+
+
+.skill ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.bluecircle{
+  background-color: #2070ae;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  list-style: none;
+
+
+}
+.greycircle{
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  list-style: none;
+
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  ;
+}
+
+.logo h1 span {
+  font-weight: 600;
+  ;
+}
+
+h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #0f6eb2;
+}
+
+h2:after {
+  background: #0f6eb2;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.fa-user,
+.fa-phone,
+.fa-lightbulb-o {
+  padding: 7px 10px 7px 10px;
+  border-radius: 50%;
+  background-color: #0f6eb2;
+  /*width: 200px;
+	height: 200px;*/
+  border: 1px solid black;
+  color: white;
+  background-color: #0f6eb2;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #0f6eb2;
+}
+
+.fa-lightbulb-o {
+  padding: 10px 14px 10px 14px;
+  border-radius: 50%;
+  background-color: #0f6eb2;
+  /*width: 200px;
+	height: 200px;*/
+  border: 1px solid black;
+  color: white;
+  background-color: #0f6eb2;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #0f6eb2;
+}
+
+.fa-star,
+.fa-briefcase,
+.fa-laptop {
+  padding: 9px 10px 9px 10px;
+  border-radius: 50%;
+  background-color: #0f6eb2;
+  /*width: 200px;
+	height: 200px;*/
+  border: 1px solid black;
+  color: white;
+  background-color: #0f6eb2;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #0f6eb2;
+}
+
+.col-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.col-right h4 {
+  font-weight: 200;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.col-right h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.col-right h3:after {
+  content: "//";
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.col-right h3:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #000;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.flex {
+  display: inline-block;
+}
+
+
+.software{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+
+
+}
+
+.software-item{
+
+  flex-direction: colum;
+  flex-basis: 45%;
+  padding-bottom: 10px;
+
+}
+
+.software-item h3:after{
+content: "";
+}
+.software-item h3:before{
+content: "";
+display: none;
+}
+
+.progress-bar-ps{
+width: 100%;
+background-color: #e7e7e7;
+/*padding: 3px;*/
+border-radius: 1px;
+}
+
+.progress-ps-fill{
+  height: 22px;
+  display: block;
+  background-color: #196fb0;
+}
+
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Editable CV Format</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/7631afd623.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Education.html">Education</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Testimonials.html">Testimonials</a></li>
+    <li id="no-content"><a href="Contact.html">Contact</a></li>
+  </ul>
+    <div id="container">
+        <div class="col-left">
+            <div class="logo">
+                <ahref></ahref>
+                <span class="fa fa-circle circle">
+      <!-- <a href="#">Hi</a> -->
+    </span>
+                <h1>Nomvuyiso<span> Banya</span></h1>
+                <h4>Software Developer </h4>
+            </div>
+            <!-- logo -->
+            <h2> <i class="fa fa-user " aria-hidden="true"></i> Profile
+      </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quia eaque beatae amet et facilis accusamus minus laudantium, a cum, dolorum laborum voluptatibus eos! Voluptatem ducimus et sapiente sed similique!</p>
+            <h2> <i class="fa fa-phone" aria-hidden="true"></i> Contact</h2>
+            <div class="contact">
+              
+            <ul>
+                <li> <span class="contact-label">  Address</span> Zixholosini A/A
+                </li>
+                <li> <span class="contact-label">  Email</span> nomvuyisobanya@gmail.com
+                </li>
+                <li> <span class="contact-label">  Phone</span> 0603514431
+                </li>
+                <li> <span class="contact-label">  Website</span>www.yourwebsite.com
+                </li>
+            </ul>
+            </div>
+            <h2> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Skills
+      </h2>
+      <div class="skills-wrapper">
+
+<div class="skill">
+  <h3>Creative</h3>
+  <ul>
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+
+    <li class="bluecircle"></li>
+
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+    <li class="greycircle"></li>
+    <li class="greycircle"></li>
+    <li class="greycircle"></li>
+    <li class="greycircle"></li>
+  </ul>
+
+
+          </div> <!-- eind skill -->
+<!-- <ul class="dots">
+  <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+    <li class="bluecircle"></li>
+      <li class="bluecircle"></li>
+        <li class="bluecircle"></li>
+          <li class="bluecircle"></li>
+            <li class="greycircle"></li>
+              <li class="greycircle"></li>
+                <li class="greycircle"></li>
+</ul> -->
+
+
+            <div class="skill">
+              <h3>Teamwork</h3>
+              <ul>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+
+                <li class="bluecircle"></li>
+
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="greycircle"></li>
+              </ul>
+
+
+                      </div> <!-- eind skill -->
+
+ 
+            <div class="skill">
+              <h3>Communication</h3>
+              <ul>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+                <li class="bluecircle"></li>
+
+                <li class="bluecircle"></li>
+
+                <li class="bluecircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+                <li class="greycircle"></li>
+              </ul>
+
+
+                      </div> <!-- eind skill -->
+
+            </div>
+        </div>
+        <!-- eind col left -->
+        <div class="col-right">
+            <h2> <i class="fa fa-star" aria-hidden="true"></i> Education </h2>
+            <div class="history">
+                <h3 class="flex">2019-2021</h3>
+                <h4>Walter Sisulu Universty</h4>
+                <p>National Diploma: Information Technology(Development Software)</p>
+            </div>
+           
+            
+            <!-- history end -->
+            <div class="history">
+                <h3 class="flex">2015-2018</h3>
+                <h4>Dimanda Senoir Secondary School</h4>
+                <p>Major Subjects: Mathematics & Physical Sciences</p>
+            </div>
+            <!-- history end -->
+
+            <!-- history end -->
+            <div class="history">
+                <h3 class="flex">2005-2014</h3>
+                <h4>Fezekile Junior Secondary School</h4>
+                <p> .........</p>
+                <h2> <i class="fa fa-laptop" aria-hidden="true"></i> Software </h2>
+                <div class="software">
+                    <div class="software-item">
+                        <h3>HTML & CSS</h3>
+                        <div class="progress-bar-ps">
+                            <span class="progress-ps-fill" style="width:80%;">
+  </span>
+                        </div>
+                    </div>
+                    <!-- 1 software item -->
+
+
+                    <div class="software-item">
+                        <h3>JAVA</h3>
+                        <div class="progress-bar-ps">
+                            <span class="progress-ps-fill" style="width:60%;">
+  </span>
+                       
+                    
+                        </div>
+                    </div>
+                    <!-- 1 software item -->
+                    <div class="software-item">
+                        <h3>VISUAL STUDIO</h3>
+                        <div class="progress-bar-ps">
+                            <span class="progress-ps-fill" style="width:70%;">
+  </span>
+                        </div>
+                    </div>
+                    <!-- 1 software item -->
+                    <div class="software-item">
+                        <h3>C-SHARP</h3>
+                        <div class="progress-bar-ps">
+                            <span class="progress-ps-fill" style="width:75%;">
+  </span>
+                        </div>
+                    </div>                     <!-- 1 software item -->
+
+
+
+
+            </div>
+
+
+
+
+
+            <!-- eind col right -->
+        </div>
+        <!-- eind container -->
+</body>
+
+</html>
+
+</body>
+</html>
